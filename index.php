@@ -7,7 +7,7 @@
 	$pass = empty($_POST['pass'])?"":$_POST['pass'];
 	if(!empty($_POST['mode'])){
             $method = "AES-128-CBC";
-            $pass2use = substr(hash("sha256",$pass,false),0,16);
+            $pass2use = strtolower(substr(hash("sha256",$pass,false),0,16));
             $options = OPENSSL_RAW_DATA;
             if($_POST['mode']=="Encrypt"){
                 $iv = random_bytes(16);
@@ -24,6 +24,7 @@
 		<textarea name="data" cols="50" rows="10" wrap="VIRTUAL"><?php echo $data?></textarea><br/><br/>
                 <input type="text" size="50" maxlength="16" name="pass" value="<?php echo $pass?>"/><br/><br/>
 		<input type="submit" name="mode" value="Encrypt" class="button"/>  <input type="submit" name="mode" value="Decrypt" class="button"/><br/>
+                
 	</form>
 	</center>
 </body></html>
