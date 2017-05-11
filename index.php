@@ -5,6 +5,7 @@
 <?php
         $data = empty($_POST['data'])?"":$_POST['data'];
 	$pass = empty($_POST['pass'])?"":$_POST['pass'];
+        $pass2use = "";
 	if(!empty($_POST['mode'])){
             $method = "AES-128-CBC";
             $pass2use = strtolower(substr(hash("sha256",$pass,false),0,16));
