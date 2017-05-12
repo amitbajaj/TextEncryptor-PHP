@@ -1,6 +1,32 @@
 <!DOCTYPE html>
-<html><head><link rel="stylesheet" type="text/css" href="styles/default.css"/><title>Encrypt/Decrypt</title></head><body>
+<html><head>
+        <link rel="stylesheet" type="text/css" href="styles/default.css"/>
+        <link rel="icon" href="images/encdec.ico"/>
+        <title>Encrypt/Decrypt</title>
+        <style>
+            body{
+                background: #feae16;
+                background-image:url('images/background.jpg');
+            }
+            input[type=button], input[type=submit], input[type=reset] {
+                background-color: #aaaaaa;
+                border: none;
+                color: white;
+                padding: 16px 32px;
+                text-decoration: none;
+                margin: 4px 2px;
+                cursor: pointer;
+                width: 20%;
+            }
+            h1{
+                color: black;
+                background-color: white; 
+            }
+        </style>
+    </head>
+    <body>
 	<center>
+        <h1>Text Encryptor</h1>
 	<form name="main" action="index.php" method="post">
 <?php
         $data = empty($_POST['data'])?"":$_POST['data'];
@@ -22,10 +48,11 @@
             }
         }
 ?>
-		<textarea name="data" cols="50" rows="10" wrap="VIRTUAL"><?php echo $data?></textarea><br/><br/>
+		<textarea name="data" cols="100" rows="20" wrap="VIRTUAL"><?php echo $data?></textarea><br/><br/>
                 <input type="text" size="50" maxlength="16" name="pass" value="<?php echo $pass?>"/><br/><br/>
 		<input type="submit" name="mode" value="Encrypt" class="button"/>  <input type="submit" name="mode" value="Decrypt" class="button"/><br/>
                 
 	</form>
 	</center>
-</body></html>
+    </body>
+</html>
