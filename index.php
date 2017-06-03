@@ -2,11 +2,10 @@
 <html><head>
         <link rel="stylesheet" type="text/css" href="styles/default.css"/>
         <link rel="icon" href="images/encdec.ico"/>
-        <title>Encrypt/Decrypt</title>
+        <title>Password Protect</title>
         <style>
             body{
-                background: #feae16;
-                background-image:url('images/background.jpg');
+                background: #c8b7b7;
             }
             input[type=button], input[type=submit], input[type=reset] {
                 background-color: #aaaaaa;
@@ -20,13 +19,27 @@
             }
             h1{
                 color: black;
-                background-color: white; 
+                background-color: #c8b7b7; 
             }
+table, th, td {
+    border: 0px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+}
+th, td {
+    text-align: center;
+}
         </style>
     </head>
     <body>
 	<center>
-        <h1>Text Encryptor</h1>
+        <h1>Password Protect</h1>
+<table><tr><td>
+<a href='https://play.google.com/store/apps/details?id=online.buzzzz.security.textencryptor&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' width='200px'/></a></td><td><!--<a href="https://www.microsoft.com/store/apps/9ntqxcf1wzw4?ocid=badge"><img src="https://assets.windowsphone.com/85864462-9c82-451e-9355-a3d5f874397a/English_get-it-from-MS_InvariantCulture_Default.png" alt="Get it from Microsoft" width='180px'/></a>--></td>
+<td><!--<a href='#'><img src='images/Download_on_the_App_Store_Badge_US-UK_135x40.svg' width='200px'/></a>--></td></tr></table>
+
 	<form name="main" action="index.php" method="post">
 <?php
         $data = empty($_POST['data'])?"":$_POST['data'];
