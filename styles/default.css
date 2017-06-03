@@ -14,7 +14,7 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 h1{
     color: black;
-    background-color: white; 
+    background-color: #c8b7b7; 
 }
 
 table{width:70%;}
