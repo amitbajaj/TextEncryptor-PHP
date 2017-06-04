@@ -14,7 +14,7 @@
                 padding: 16px 32px;
                 text-decoration: none;
                 margin: 4px 2px;
-                cursor: pointer;
+                cursor: hand;
                 width: 20%;
             }
             h1{
@@ -62,7 +62,7 @@ th, td {
         }
 ?>
 		<textarea name="data" cols="100" rows="20" wrap="VIRTUAL"><?php echo $data?></textarea><br/><br/>
-                <input type="text" size="50" maxlength="16" name="pass" value="<?php echo $pass?>"/><br/><br/>
+                <input type="password" size="50" maxlength="16" name="pass" value="<?php echo $pass?>"/><br/><br/>
 		<input type="submit" name="mode" value="Encrypt" class="button"/>  <input type="submit" name="mode" value="Decrypt" class="button"/><br/>
                 
 	</form>
