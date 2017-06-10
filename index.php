@@ -40,9 +40,9 @@ th, td {
                 <th width="20%">
                     <a href='https://play.google.com/store/apps/details?id=online.buzzzz.security.textencryptor&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' width='200px'/></a>
                     <br>
-                    <!--
                     <a href="https://www.microsoft.com/store/apps/9ntqxcf1wzw4?ocid=badge"><img src="https://assets.windowsphone.com/85864462-9c82-451e-9355-a3d5f874397a/English_get-it-from-MS_InvariantCulture_Default.png" alt="Get it from Microsoft" width='170px'/></a>
                     <br><br>
+                    <!--
                     <a href='#'><img src='images/Download_on_the_App_Store_Badge_US-UK_135x40.svg' width='180px'/></a>
                     <br><br>
                     -->
